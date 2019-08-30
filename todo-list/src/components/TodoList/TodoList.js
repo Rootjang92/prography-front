@@ -50,7 +50,7 @@ const TodoList = ({ item }) => {
           <ul className="todo-block" key={todo.id} id={i}>
             <li key={todo.id} className={`${todo.status === 'complete' ? 'complete' : 'todo'} text`}>{todo.title}</li>
             <button className={todo.status === 'complete' ? 'complete' : 'todo'} onClick={handleDone}>{todo.status}</button>
-            <button className="delete" onClick={handleDelete}>Delete</button>
+            <button className="delete" onClick={handleDelete}>Delete!</button>
           </ul>
         ))}
       </div>
