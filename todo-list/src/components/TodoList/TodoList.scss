@@ -1,0 +1,94 @@
+.todo-list {
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+
+  .todo-form {
+    border-bottom: 1px solid silver;
+    display: flex;
+    padding: 1rem;
+  
+    input {
+      flex: 1;
+      font-size: 1.2rem;
+      outline: none;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid silver;
+      &:focus {
+        border-bottom: 1px solid black;
+      }
+    }
+  
+    .add-btn {
+      width: 5rem;
+      height: 2rem;
+      margin-left: 1rem;
+      border: 1px solid green;
+      color: green;
+      font-weight: 500;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+        background: green;
+        color: white;
+      }
+      &:active {
+        background: green;
+      }
+    }
+  }
+
+  .todos {
+    
+    .hide-btn {
+      display: flex;
+      width: 5rem;
+      height: 2rem;
+      margin-left: auto;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      align-content: center;
+      justify-content: center;
+      border: 1px solid silver;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .todo-block {
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+
+    .complete {
+      text-decoration: line-through;
+    }
+    .text {
+      flex: 1;
+      flex-direction: row;
+      word-break: break-all;
+    }
+    .delete {
+      margin-left: 1rem;
+      color: red;
+      font-size: 0.8rem;
+      &:hover {
+        color: red;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  
+
+  .todo-block + .todo-block {
+    border-top: 1px solid silver;
+  }
+}
